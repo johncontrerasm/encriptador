@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- encabezado -->
+    <header>
+        <div class="caja">
+            <h1>
+               <!--  <img src="imagenes/logo.png" alt="Encriptador marca"> -->
+            </h1>    
+        </div>            
+    </header>
+    
+    <section>
+        <label for="texto-encriptar">Escribe tu mensaje</label>
+        <textarea cols="100" rows="2" id="texto-encriptar" class="input-encriptar" required></textarea>
+        <textarea cols="100" rows="2" id="texto-desencriptar" class="input-desencriptar"></textarea>
+        
+        <p>Solo letras minusculas y sin acentos</p>
+        <button class="boton-encriptar" onclick="texto1()">Encriptar</button>    
+        <button class="boton-desencriptar" onclick="texto1()">Desencriptar</button>
+
+    </section>   
+
+    <footer>
+        <p class="copy"> &copy Copyright encriptador</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
