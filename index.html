@@ -20,19 +20,34 @@
         </div>            
     </header>
     
-    <section>
+    
         
+     <div class="esqueleto">
         <div class="cajas-texto">
             <textarea cols="60" rows="2" id="texto-encriptar" class="input-encriptar" required placeholder="Ingrese el texto aqui"></textarea>
-            <textarea cols="50" rows="30" id="texto-desencriptar" class="input-desencriptar"></textarea>
-        </div>
-        <p class="advice">Solo letras minusculas y sin acentos</p>
 
-        <div class="btns">
-            <button class="boton-encriptar" onclick="encriptar()"  class ="btn-encriptar">Encriptar</button>    
-            <button class="boton-desencriptar" onclick="desencriptar()" class ="btn-encriptar">Desencriptar</button>
-        </div>    
-    </section>   
+            
+            <div class="btns">
+                <p class="advice">Solo letras minusculas y sin acentos</p>
+                <button class="boton-encriptar" onclick="encriptar()"  class ="btn-encriptar">Encriptar</button>    
+                <button class="boton-desencriptar" onclick="desencriptar()" class ="btn-encriptar">Desencriptar</button>
+            </div>
+        </div>
+         
+
+        <div class="cajas-texto2">
+            <textarea cols="50" rows="40" id="texto-desencriptar" class="input-desencriptar"></textarea>
+        </div>
+     </div>
+    <div class="imagen">
+        <img src="img/notfound.png" alt="Descripción de la imagen" id="imagen-texto">
+    </div>
+        
+        <button class="boton-copiartexto" onclick="copiar_texto()" id="boton-copiar">Copiar Texto</button>   
+
+    </section>
+    
+    
 
     <footer>
         <p class="copy"> &copy Copyright encriptador</p>

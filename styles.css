@@ -7,8 +7,18 @@ body{
     margin: 100px auto;
 }
 
-.cajas-texto {
+.esqueleto{
     display: flex;
+}
+
+.cajas-texto {
+    display: block;
+    flex-direction: row; /* Alinear en la misma fila */
+    align-items: flex-start;; /* Alinear verticalmente */
+}
+
+.cajas-texto2 {
+   
     flex-direction: row; /* Alinear en la misma fila */
     align-items: flex-start;; /* Alinear verticalmente */
 }
@@ -17,16 +27,18 @@ body{
     font-size: 20px;
     font-weight: bold;
     background-color: #DBE3FA;
-    margin: 0px 0px 0px 180px;
+    margin: 0px 0px 0px 25px;
     border: none;
-    border-radius: 5px;    
+    border-radius: 20px;
+    padding: 10px  
     
 }
 
 .input-desencriptar{
-    margin: 0px 0px 0px 180px;
+    margin: 0px 0px 0px 31px;
     border: none;
-    border-radius: 18px;
+    border-radius: 20px;
+    padding: 10px
 }
 
 
@@ -41,7 +53,14 @@ body{
 }
 
 .btns{
-    margin : 17px 50px;
+    margin : 0px 0px;
+    position: relative;
+    top: 421px; /* Ajusta el valor según la posición deseada */
+}
+
+.btns p{
+    margin : 19px -33px;
+    color: #5065A2;
     
 }
 
@@ -59,6 +78,7 @@ body{
     /*quitar borde del boton y las puntas*/
    border: none;
    border-radius: 20px;
+   margin: 0px 33px 0px 0px;
 
 }
 
@@ -98,4 +118,28 @@ body{
     margin: 0px 40px; 
     padding: 6px; /* Añade espacio alrededor del símbolo de exclamación para que la sombra sea visible */
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5); /* Crea una sombra circular alrededor del símbolo de exclamación */
+}
+
+
+.imagen{
+    position: relative;
+    bottom: 643px;
+    left: 794px;
+}
+
+.boton-copiartexto{
+
+    width: 300px;
+    height: 80px;
+    display:none;
+    /*cambiando la letra*/
+    font-size: 15px;
+    font-weight: bold;
+    color:#5065A2;
+    background-color: transparent;
+   /*quitar borde del boton y las puntas*/
+    border-radius: 20px;
+    position: relative;
+    bottom: 94px;
+    left: 824px;
 }
