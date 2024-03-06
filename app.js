@@ -1,6 +1,6 @@
 
-const cajaEncriptar = document.querySelector('#texto-encriptar');
-const cajaDesencriptar = document.querySelector('texto-desencriptar');
+var cajaEncriptar = document.querySelector('#texto-encriptar');
+var cajaDesencriptar = document.querySelector('#texto-desencriptar');
 const diccionarioEncriptor = {}
 const diccionarioDesencriptor = {}
 let text = ""
@@ -30,7 +30,7 @@ function encriptar(){
                    .replace(/a/g, diccionarioEncriptor["a"])
                    .replace(/o/g, diccionarioEncriptor["o"])
                    .replace(/u/g, diccionarioEncriptor["u"]);
-        console.log(text);
+        cajaDesencriptar.value=(text);
     }
 }
 
@@ -46,6 +46,6 @@ function desencriptar(){
                    .replace(/ai/g, diccionarioDesencriptor["ai"])
                    .replace(/ober/g, diccionarioDesencriptor["ober"])
                    .replace(/ufat/g, diccionarioDesencriptor["ufat"]);
-        console.log(text);
+        cajaDesencriptar.value=(text);
     }
 }

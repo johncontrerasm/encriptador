@@ -1,0 +1,101 @@
+
+
+body{
+    background-color: #DBE3FA;
+    width: 940px;
+    position: relative;
+    margin: 100px auto;
+}
+
+.cajas-texto {
+    display: flex;
+    flex-direction: row; /* Alinear en la misma fila */
+    align-items: flex-start;; /* Alinear verticalmente */
+}
+
+.input-encriptar {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #DBE3FA;
+    margin: 0px 0px 0px 180px;
+    border: none;
+    border-radius: 5px;    
+    
+}
+
+.input-desencriptar{
+    margin: 0px 0px 0px 180px;
+    border: none;
+    border-radius: 18px;
+}
+
+
+
+.advice{
+    
+    font-size: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    margin : 15px 0px 20px 58px;
+
+}
+
+.btns{
+    margin : 17px 50px;
+    
+}
+
+.boton-encriptar{
+
+    font-size: inherit;
+    width: 300px;
+    height: 80px;
+
+    /*cambiando la letra*/
+   font-size: 15px;
+   font-weight: bold;
+   color:white;
+   background: #A98DB6 ;
+    /*quitar borde del boton y las puntas*/
+   border: none;
+   border-radius: 20px;
+
+}
+
+.boton-desencriptar{
+
+    font-size: inherit;
+    width: 300px;
+    height: 80px;
+
+    /*cambiando la letra*/
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    background: #B9BCC2;
+
+   /*quitar borde del boton y las puntas*/
+   border: none;
+   border-radius: 20px;
+
+
+
+}
+
+
+.advice{
+    margin: 0px 0px 0px 0px;
+
+}
+
+.advice::before {
+    content: "!";
+    background-color: #495057;
+    border-radius: 100%; /* Hace que el símbolo de exclamación sea circular */
+    font-size: 8px;
+    color: white;
+    text-align: center;
+    margin: 0px 40px; 
+    padding: 6px; /* Añade espacio alrededor del símbolo de exclamación para que la sombra sea visible */
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5); /* Crea una sombra circular alrededor del símbolo de exclamación */
+}

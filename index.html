@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- resetear todo el css por defecto -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
@@ -17,14 +21,17 @@
     </header>
     
     <section>
-        <label for="texto-encriptar">Escribe tu mensaje</label>
-        <textarea cols="100" rows="2" id="texto-encriptar" class="input-encriptar" required></textarea>
-        <textarea cols="100" rows="2" id="texto-desencriptar" class="input-desencriptar"></textarea>
         
-        <p>Solo letras minusculas y sin acentos</p>
-        <button class="boton-encriptar" onclick="encriptar()">Encriptar</button>    
-        <button class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+        <div class="cajas-texto">
+            <textarea cols="60" rows="2" id="texto-encriptar" class="input-encriptar" required placeholder="Ingrese el texto aqui"></textarea>
+            <textarea cols="50" rows="30" id="texto-desencriptar" class="input-desencriptar"></textarea>
+        </div>
+        <p class="advice">Solo letras minusculas y sin acentos</p>
 
+        <div class="btns">
+            <button class="boton-encriptar" onclick="encriptar()"  class ="btn-encriptar">Encriptar</button>    
+            <button class="boton-desencriptar" onclick="desencriptar()" class ="btn-encriptar">Desencriptar</button>
+        </div>    
     </section>   
 
     <footer>
