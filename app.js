@@ -23,6 +23,8 @@ diccionarioEncriptor["ufat"] = "u";
 function encriptar(){
     console.log(cajaEncriptar.value);
     text = cajaEncriptar.value;
+    var imagen = document.getElementById("imagen-texto");
+    var botoncopiar = document.getElementById("boton-copiar");
     if (text.includes("e") || text.includes("i") || text.includes("a") || text.includes("o") || text.includes("u")  ){
         console.log("encontre una e")
         text = text.replace(/e/g, diccionarioEncriptor["e"])
@@ -30,7 +32,9 @@ function encriptar(){
                    .replace(/a/g, diccionarioEncriptor["a"])
                    .replace(/o/g, diccionarioEncriptor["o"])
                    .replace(/u/g, diccionarioEncriptor["u"]);
-        cajaDesencriptar.value=(text);
+        cajaDesencriptar.value=(text);        
+        imagen.style.display = "none";
+        botoncopiar.style.display = "block";
     }
 }
 
@@ -48,4 +52,13 @@ function desencriptar(){
                    .replace(/ufat/g, diccionarioDesencriptor["ufat"]);
         cajaDesencriptar.value=(text);
     }
+
+}
+
+
+function copiar_texto(){
+    cajaDesencriptar.select();
+    cajaDesencriptar.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(cajaDesencriptar.value);
+    console.log("copiando")
 }
